@@ -76,7 +76,7 @@ void printIPNM(){
     ether.makeNetStr(parseIP, ether.myip, 4, '.', 10);
     
     char* endIP; 
-    endIP = malloc(20);
+    endIP = (char*) malloc(20);
     strcpy(endIP, devIP);
     strcat(endIP, parseIP);
     
@@ -85,7 +85,7 @@ void printIPNM(){
     ether.makeNetStr(parseNM, ether.netmask, 4, '.', 10);
 
     char * endNM; 
-    endNM = malloc(15);
+    endNM = (char*) malloc(15);
     strcpy(endNM, devNM);
     strcat(endNM, parseNM);
 
@@ -112,7 +112,7 @@ void printGWDNS(){
     
     char * endGW; 
     //endGW = malloc(1 + strlen(devGW) + strlen(devGW) + 3);
-    endGW = malloc(20);
+    endGW = (char*) malloc(20);
     strcpy(endGW, devGW);
     strcat(endGW, parseGW);
     
@@ -121,7 +121,7 @@ void printGWDNS(){
     ether.makeNetStr(parseDNS, ether.dnsip, 4, '.', 10);
 
     char* endDNS;
-    endDNS = malloc(15);
+    endDNS = (char*) malloc(15);
     strcpy(endDNS, devDNS);
     strcat(endDNS, parseDNS);
 
