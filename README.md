@@ -26,7 +26,7 @@ The code is meant to be run on an Atmel 328p microcontroller.
 
 ## Built With
 
-* [PlatformIO](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [PlatformIO](https://platformio.org/) - The web framework used
 
 ## Authors
 
